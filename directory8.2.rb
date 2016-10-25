@@ -25,7 +25,7 @@ end
 def print(students)
   students.each do |student|
     # the if statement here seems too long, but couldn't get it to work with casecmp
-    if student[:name].to_s.start_with?("D") || student[:name].to_s.start_with?("d")
+    if student[:name].to_s.start_with?("D", "d")
       puts "#{student[:name]} (#{student[:cohort]} cohort)"
     end
   end
